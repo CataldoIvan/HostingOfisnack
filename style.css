@@ -1,14 +1,3 @@
-/*// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 1024px) { ... }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }*/
 
 @font-face {
     font-family: "GothamRounded-Bold";
@@ -58,7 +47,7 @@ p.primerSaludo{
 	margin: 0;
 	padding: 2px 5px 5px 51px;
 	list-style: none;
-	background-image: url("/img/puntoVerde.png");
+	background-image: url("puntoVerde.png");
 	background-repeat: no-repeat;
 	background-position:15px 8px;
 	background-size: 23px;
@@ -275,7 +264,7 @@ p.primerSaludo{
 	margin: 0;
 	padding: 2px 5px 5px 51px;
 	list-style: none;
-	background-image: url("/img/puntoVerde.png");
+	background-image: url("puntoVerde.png");
 	background-repeat: no-repeat;
 	background-position:15px 8px;
 	background-size: 23px;
@@ -284,7 +273,7 @@ p.primerSaludo{
 	margin: 0;
 	padding: 2px 5px 5px 51px;
 	list-style: none;
-	background-image: url("/img/puntoNaranja.png");
+	background-image: url("puntoNaranja.png");
 	background-repeat: no-repeat;
 	background-position:15px 8px;
 	background-size: 23px;
