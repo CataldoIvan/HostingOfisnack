@@ -35,7 +35,7 @@
                         <li><a href="#porQueOfisnack">Por que ofisnack?</a></li>
                     </ul>
                     <ul class="li">
-                        <li><a href="#mision">Nuestra Mision</a></li>
+                        <li><a href="#mision">Nuestro Proposito</a></li>
                     </ul>    
                     <ul class="li">
                         <li><a href="" data-toggle="modal" data-target="#exampleModalLong">Contactanos</a></li>
@@ -507,17 +507,69 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body">
-            <form class="col s10 " id="lead_form" action="https://ofidirectprueba.oppen.io/leads/leads_process?uuid=858c07e7-52d2-0af7-076a-06d7ea970e71" method="post" onsubmit="check_if_capcha_is_filled" validate="validate"><input type="hidden" name="LeadSource" value="0002"/><input type="hidden" name="UseCaptcha"/><div><label class="active" for="Nombre">Nombre</label><input class="validate" type="" value="" name="Nombre" id="Nombre" placeholder="" required="required"/></div><div><label class="active" for="Apellido">Apellido</label><input class="validate" type="" value="" name="Apellido" id="Apellido" placeholder="" required="required"/></div><div><label class="active" for="Telefono">Telefono</label><input class="validate" type="" value="" name="Telefono" id="Telefono" placeholder="" required="required"/></div><div><label class="active" for="Correo">Correo</label><input class="validate" type="email" value="" name="Correo" id="Correo" placeholder="" required="required"/></div><div><label class="active" for="Fuente">Fuente</label><input class="validate" type="" value="" name="Fuente" id="Fuente" placeholder="" required="required"/></div><div><label class="active" for="Campaign">campaign_id</label><input class="validate" type="" value="19-web" name="Campaign" id="Campaign" placeholder="" required="required"/><
-                /div><script>var useCaptcha = document.getElementById('UserCaptcha');
+        <div class="modal-body row" style="color: black;">
+            <form class="col-10 " id="lead_form" action="https://ofidirectprueba.oppen.io/leads/leads_process?uuid=858c07e7-52d2-0af7-076a-06d7ea970e71" method="post" onsubmit="check_if_capcha_is_filled" validate="validate">
+                <input type="hidden" name="LeadSource" value="0002"/>
+                <input type="hidden" name="UseCaptcha"/>
+                <div class="col-12">
+                    <label class="active col-3" for="Nombre">
+                        Nombre
+                    </label>
+                    <input class="validate col-8" type="" value="" name="Nombre" id="Nombre" placeholder="" required="required"/>
+                </div>
+                <br>
+               
+                <div class="col-12">
+                    <label class="active col-3" for="Apellido">
+                        Apellido
+                    </label>
+                    <input class="validate col-8" type="" value="" name="Apellido" id="Apellido" placeholder="" required="required"/>
+                </div>
+                <br>
+                <div class="col-12">
+                    <label class="active col-3" for="Telefono">
+                        Telefono
+                    </label>
+                    <input class="validate col-8" type="" value="" name="Telefono" id="Telefono" placeholder="" required="required"/>
+                </div>
+                <br>
+                <div class="col-12">
+                    <label class="active col-3" for="Correo">
+                        Correo
+                    </label>
+                    <input class="validate col-8" type="email" value="" name="Correo" id="Correo" placeholder="" required="required"/>
+                 </div>
+                 <br>
+                 <div class="col-12">
+                     <label class="active col-3" for="Fuente">
+                         Fuente
+                      </label>
+                      <input class="validate col-8" type="" value="" name="Fuente" id="Fuente" placeholder="" required="required"/>
+                </div>
+                <div hidden>
+                    <label class="active" for="Campaign">
+                        campaign_id
+                    </label>
+                    <input class="validate" type="" value="19-web" name="Campaign" id="Campaign" placeholder="" required="required"/>
+                </div>
+                <script>var useCaptcha = document.getElementById('UserCaptcha');
                 var allowSubmit = !useCaptcha;
                 function check_if_capcha_is_filled(e) {
                     console.log(allowSubmit);
                     console.log('test validation');
                     if (allowSubmit) return true;
                     e.preventDefault();
-                }</script><button class="btn waves-effect waves-light hide" type="submit" id="send_action" name="action">Enviar</button></form>      
-                    
+                }</script>
+                <br>
+                <div class=" text-center">
+                    <button class="btn waves-effect btn-warning  waves-light hide" type="submit" id="send_action" name="action">
+                        Enviar
+                    </button>
+                </div>
+            </form>      
+                 
+               
+                   
        
         </div>
       </div>
