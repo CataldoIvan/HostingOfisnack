@@ -8,6 +8,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <!-- Link de animaciones-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <title>Ofisnack</title>
   </head>
   <body>
@@ -43,7 +46,7 @@
                 </nav>
             </div>
                 
-                   <div class="primerHoja  ml-5">
+            <div class="primerHoja  ml-5">
                 <h1 class="titulo1 col-12 col-lg-6"> OfiSnack, el cambio 
                     saludable que buscás 
                     para tus colaboradores
@@ -84,10 +87,14 @@
                     BUENO PARA ELLOS.”
                 </p>
             </div>
+            <div class="espacio">
+                &nbsp; 
+                
+            </div>
 
             <section id="mundoOfisnack" class=" segundaHoja col-12  pt-5">
                 <div class="part1 col-12 col-lg-4 float-left " >
-                    <p class=""> El mundo  ofisnack</p>
+                    <p class="mundoOfi"> El mundo  ofisnack</p>
                 </div>
                 <div class="part2 col-12 col-lg-4 float-lg-left ">
                     <p><img src="imagen.png" alt="" class="imagen2hoja">
@@ -122,7 +129,7 @@
                 
             </div>
 
-            <section id="comoFunciona" class=" col-12">
+            <section id="comoFunciona" class="ComoF col-12">
                 <div class="CMparte1 col-lg-6">
                     <h2>¿A qué tipo de empresas
                         apunta el concepto OfiSnack?
@@ -273,7 +280,7 @@
             </div> 
 
             <section id="encontraEnOfisnack"  style="position: relative;">
-                <div class=" col-12 col-lg-8" >
+                <div class="encontra col-12 col-lg-8" >
                     <h1>
                         Encontrá en OfiSnack
                         el sistema de snacks más
@@ -289,7 +296,7 @@
                 <div class="col-8 float-left">
                     <img src="caja.png"  id="caja" alt="caja">
                 </div>
-                <div class="col-4 float-left">
+                <div class="snaky col-4 float-left">
                     <img src="snaky.png" id="snaky" alt="snaky">
                 </div>
                 
@@ -300,7 +307,7 @@
             
             </div> 
 
-            <section id="porQueOfisnack" class="col-12">
+            <section id="porQueOfisnack" class="porque col-12">
                 <p style="letter-spacing: -2px;font-size: 3.5rem;">¿Por qué OfiSnack?</p>
                 <div class="contenedorTabla col-12 col-lg-8  float-left" >
                     <table>
@@ -442,7 +449,7 @@
                 &nbsp; 
                 
             </div>
-            <section id="mision" class="col-12">
+            <section id="mision" class="final col-12">
                 <div class="col-7 float-left">
                     <h1>
                         <br class="d-lg-none">
@@ -585,6 +592,87 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    
+    <script>
+        ScrollReveal().reveal('.navbar',{
+            duration: 2000,
+            origin:'top',
+            distance:'100px'
+        });
+        ScrollReveal().reveal('.primerHoja h1',{
+            duration: 1000,
+            origin:'left',
+            distance:'100px'
+        });
+        ScrollReveal().reveal('.primerHoja ul li',{
+            origin:'left',
+            distance:'200px',
+            interval:300
+        });
+        ScrollReveal().reveal('.primerSaludo',{
+            duration: 1000,
+        });
+        ScrollReveal().reveal('.mundoOfi',{
+            duration: 2000,
+            origin:'left',
+            distance:'100px'
+        });
+        ScrollReveal().reveal('.imagen2hoja',{
+            duration: 2000,
+            origin:'right',
+            distance:'100px'
+        });
+        ScrollReveal().reveal('.ComoF',{
+            duration: 2000,
+            origin:'top',
+            distance:'100px'
+        });
+
+        ScrollReveal().reveal('.ComoF',{
+            duration: 2000,
+            origin:'top',
+            distance:'100px'
+        });
+        ScrollReveal().reveal('.bParte1',{
+            duration: 2000,
+            origin:'left',
+            distance:'100px'
+        });
+        ScrollReveal().reveal('.bParte2',{
+            duration: 2000,
+            origin:'right',
+            distance:'100px'
+        });
+        ScrollReveal().reveal('.snaky',{
+            duration: 3000,
+            origin:'right',
+            distance:'400px'
+        });
+        ScrollReveal().reveal('.snaky',{
+            duration: 3000,
+            origin:'right',
+            distance:'400px'
+        });
+        ScrollReveal().reveal('.encontra',{
+            duration: 1000,
+            origin:'right',
+            
+        });
+        ScrollReveal().reveal('.porque',{
+            duration: 2000,
+            origin:'top',
+            
+        });
+        ScrollReveal().reveal('.final',{
+            duration: 2000,
+            origin:'top',
+            
+        });
+        ScrollReveal().reveal('.final h1',{
+            duration: 3000,
+            origin:'left',
+            distance:'100px'
+            
+        });
+    </script>
   </body>
 </html>

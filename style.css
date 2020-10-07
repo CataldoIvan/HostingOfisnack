@@ -4,6 +4,10 @@
     font-family: "GothamRounded-Bold";
     src: url("GothamRounded-Bold.otf");
   }
+/* desplazamiento suave por la pagina*/
+  html{
+    scroll-behavior: smooth;
+  }
 
 body {
     background-color:#17a2b8;
