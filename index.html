@@ -497,14 +497,103 @@
         
          </div>
       </div> 
+      <form class="col-10 " id="lead_form" action="https://ofidirectprueba.oppen.io/leads/leads_process?uuid=858c07e7-52d2-0af7-076a-06d7ea970e71" method="post" onsubmit="check_if_capcha_is_filled" validate="validate">
+        <input type="hidden" name="LeadSource" value="0002"/>
+        <input type="hidden" name="UseCaptcha"/>
+        <div class="my-2">
+            <label hidden class="active" for="Nombre">
+                Nombre:
+            </label>
+            <input class="validate form-control" type="" value="" name="Nombre"id="Nombre" placeholder="Nombre *" required="required" />
+        </div>
+        <div class="my-2">
+            <label hidden class="active" for="Apellido">
+                Apellido:
+            </label>
+            <input class="validate form-control" type="" value="" name="Apellido" id="Apellido" placeholder="Apellido *" required="required" />
+        </div>
+        <div class="my-2">
+            <label hidden class="active" for="Telefono">
+                Telefono:
+            </label>
+            <input class="validate form-control" type="" value="" name="Telefono" id="Telefono" placeholder="Teléfono *" required="required" />
+        </div>
+        <div class="my-2">
+            <label hidden class="active" for="CorreoElectronico">
+                Correo Electronico:
+            </label>
+            <input class="validate form-control" type="" value="" name="CorreoElectronico" id="CorreoElectronico *" placeholder="Correo electrónico" required="required" />
+        </div>
+        <div class="my-2">
+            <label  hidden class="active" for="Empresa">
+                Empresa:
+            </label>
+            <input class="validate form-control" type="" value="" name="Empresa" id="Empresa" placeholder="Empresa *" required="required" />
+        </div>
+        <div class="col-6 float-left my-2">
+            <label  hidden class="active" for="Area">
+                Sector:
+            </label>
+            <input class="validate form-control" type="" value="" name="Area"id="Area" placeholder="Área *" required="required" style="margin-left:-15px;"/>
+        </div>
+        <div class="col-6 float-left my-2" style="margin-left: 0px;">
+            <label  hidden class="active" for="Empleados">
+                Empleados:
+            </label>
+            <Select class="validate form-control" type="" value="" name="Empleados" id="Empleados" placeholder="Cant. Empleados *" required="required" style="margin-left: 13px;">
+                <option value=""selected>Seleccionar</option>
+                <option value="1-19">1 a 19</option>
+                <option value="20-99">20 a 99</option>
+                <option value="100-249">100 - 249</option>
+                <option value="250-500">250 - 500</option>
+                <option value="+500">más de 500</option>
+            </Select>
+        </div>
+        <div class="my-2">
+            <label   class="active" for="Fuente">
+                Dónde nos conociste? *   
+            </label>
+            <select class="validate fuente form-control" aria-placeholder="jsdja" name="Fuente" id="Fuente" required="required">
+                <option value="" selected disabled> Seleccionar</option>
+                <option value="Linkedin">Linkedin</option>
+                <option value="Instagram">Instagram</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Google">Google</option>
+                <option value="Referido">A través de un referido</option>
+                <option value="Newsletter">Newsletter</option>
+                <option value="Otro">Otro</option>
+              </select>
+        </div>
+        <div hidden>
+            <label class="active" for="Campaign">
+                campaign_id
+            </label>
+            <input class="validate" type="" value="19-web" name="Campaign" id="Campaign" placeholder="" required="required"/>
+        </div>
+        <script>var useCaptcha = document.getElementById('UserCaptcha');
+        var allowSubmit = !useCaptcha;
+        function check_if_capcha_is_filled(e) {
+            console.log(allowSubmit);
+            console.log('test validation');
+            if (allowSubmit) return true;
+            e.preventDefault();
+        }</script>
+        <br>
+        (*) Todos los campos son obligatorios   
+        <div class=" text-center">
+            <button class="btn waves-effect btn-warning  waves-light hide" type="submit" id="send_action" name="action">
+                Enviar
+            </button>
+        </div>
+    </form>  
 
   
   <!-- FORMULARIO DE CONTACTO -->
-   <!-- Boton desactivado CONTACTANOS 
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-                    Launch demo modal
-                </button>
-                -->
+  
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+        <h1>Launch demo modal   Boton desactivado CONTACTANOS </h1>
+    </button>
+            
   <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true" >
     <div class="modal-dialog" role="document">
       <div class="modal-content  " style="text-color:black">
@@ -518,40 +607,62 @@
             <form class="col-10 " id="lead_form" action="https://ofidirectprueba.oppen.io/leads/leads_process?uuid=858c07e7-52d2-0af7-076a-06d7ea970e71" method="post" onsubmit="check_if_capcha_is_filled" validate="validate">
                 <input type="hidden" name="LeadSource" value="0002"/>
                 <input type="hidden" name="UseCaptcha"/>
-                <div class="col-12">
-                    <label class="active col-3" for="Nombre">
-                        Nombre
+                <div class="my-2">
+                    <label hidden class="active" for="Nombre">
+                        Nombre:
                     </label>
-                    <input class="validate col-8" type="" value="" name="Nombre" id="Nombre" placeholder="" required="required"/>
+                    <input class="validate form-control" type="" value="" name="Nombre"id="Nombre" placeholder="Nombre" required="required" />
                 </div>
-                <br>
-               
-                <div class="col-12">
-                    <label class="active col-3" for="Apellido">
-                        Apellido
+                <div class="my-2">
+                    <label hidden class="active" for="Apellido">
+                        Apellido:
                     </label>
-                    <input class="validate col-8" type="" value="" name="Apellido" id="Apellido" placeholder="" required="required"/>
+                    <input class="validate form-control" type="" value="" name="Apellido" id="Apellido" placeholder="Apellido" required="required" />
                 </div>
-                <br>
-                <div class="col-12">
-                    <label class="active col-3" for="Telefono">
-                        Telefono
+                <div class="my-2">
+                    <label hidden class="active" for="Telefono">
+                        Telefono:
                     </label>
-                    <input class="validate col-8" type="" value="" name="Telefono" id="Telefono" placeholder="" required="required"/>
+                    <input class="validate form-control" type="" value="" name="Telefono" id="Telefono" placeholder="Teléfono" required="required" />
                 </div>
-                <br>
-                <div class="col-12">
-                    <label class="active col-3" for="Correo">
-                        Correo
+                <div class="my-2">
+                    <label hidden class="active" for="CorreoElectronico">
+                        Correo Electronico:
                     </label>
-                    <input class="validate col-8" type="email" value="" name="Correo" id="Correo" placeholder="" required="required"/>
-                 </div>
-                 <br>
-                 <div class="col-12">
-                     <label class="active col-3" for="Fuente">
-                         Fuente
-                      </label>
-                      <input class="validate col-8" type="" value="" name="Fuente" id="Fuente" placeholder="" required="required"/>
+                    <input class="validate form-control" type="" value="" name="CorreoElectronico" id="CorreoElectronico" placeholder="Correo electrónico" required="required" />
+                </div>
+                <div class="my-2">
+                    <label  hidden class="active" for="Empresa">
+                        Empresa:
+                    </label>
+                    <input class="validate form-control" type="" value="" name="Empresa" id="Empresa" placeholder="Empresa" required="required" />
+                </div>
+                <div class="col-6 float-left my-2">
+                    <label  hidden class="active" for="Area">
+                        Area:
+                    </label>
+                    <input class="validate form-control" type="" value="" name="Area"id="Area" placeholder="Área" required="required" style="margin-left:-15px;"/>
+                </div>
+                <div class="col-6 float-left my-2" style="margin-left: 0px;">
+                    <label  hidden class="active" for="Empleados">
+                        Empleados:
+                    </label>
+                    <input class="validate form-control" type="" value="" name="Empleados" id="Empleados" placeholder="Cant. Empleados" required="required" style="margin-left: 13px;" />
+                </div>
+                <div class="my-2">
+                    <label   class="active" for="Fuente">
+                        Dónde nos conociste?
+                    </label>
+                    <select class="validate fuente form-control" aria-placeholder="jsdja" name="Fuente" id="Fuente" required="required">
+                        <option value=""   selected> Seleccionar</option>
+                        <option value="Linkedin">Linkedin</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="Google">Google</option>
+                        <option value="Referido">A través de un referido</option>
+                        <option value="Newsletter">Newsletter</option>
+                        <option value="Otro">Otro</option>
+                      </select>
                 </div>
                 <div hidden>
                     <label class="active" for="Campaign">
@@ -559,6 +670,9 @@
                     </label>
                     <input class="validate" type="" value="19-web" name="Campaign" id="Campaign" placeholder="" required="required"/>
                 </div>
+                <div>
+                    <input type="hidden" name="Type" value="Ofisnack-B2B"/>
+                    </div>
                 <script>var useCaptcha = document.getElementById('UserCaptcha');
                 var allowSubmit = !useCaptcha;
                 function check_if_capcha_is_filled(e) {
@@ -568,6 +682,7 @@
                     e.preventDefault();
                 }</script>
                 <br>
+                
                 <div class=" text-center">
                     <button class="btn waves-effect btn-warning  waves-light hide" type="submit" id="send_action" name="action">
                         Enviar
